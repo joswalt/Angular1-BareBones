@@ -1,0 +1,23 @@
+{
+  "name": "angular1-barebones",
+  "author": "John Oswalt",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "live-server --open=src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joswalt/Angular1-BareBones.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.1.0",
+    "live-server": "^0.9.2"
+  },
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-animate": "^1.5.2",
+    "angular-sanitize": "^1.5.2",
+    "angular-ui-router": "^0.2.18"
+  }
+}
