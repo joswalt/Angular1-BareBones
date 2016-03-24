@@ -36,5 +36,5 @@ to build Angular modules, controllers, services, factories, directives and more.
 
 ## Project Influences
 
-This project was influenced by [Dan Wahlin's Angular 2 Bare Bones Project](https://github.com/DanWahlin/Angular2-BareBones). 
+This project was influenced by Dan Wahlin's [Angular 2 Bare Bones Project](https://github.com/DanWahlin/Angular2-BareBones). 
 If you are interested in working with Angular 2, you should check out his project as well.
