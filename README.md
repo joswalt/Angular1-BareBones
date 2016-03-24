@@ -9,6 +9,7 @@ Here's what is in the project:
 * Angular scripts and configuration are ready to go
 * Angular bootstrapper wired up to the app module
 * App shell with basic routing applied
+* Utilized angular-ui-router for routing in application
 * Modular based application design to help with team development per feature
 * Dashboard module for initial layout 
 * A single "feature" component (represents a custom feature your app would have)
