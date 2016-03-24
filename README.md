@@ -2,7 +2,7 @@
 
 The Bare Bones project is an Angular 1.X starter project that has the npm modules, 
 configuration, scripts, folders and routing in place to make getting started 
-with an Angular 1 project easy!
+with an Angular 1.X project easy!
 
 Here's what is in the project:
 
