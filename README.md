@@ -10,7 +10,7 @@ Here's what is in the project:
 * Angular bootstrapper wired up to the app module
 * App shell with basic routing applied
 * Modular based application design to help with team development per feature
-* Dashboard module for intial layout 
+* Dashboard module for initial layout 
 * A single "feature" component (represents a custom feature your app would have)
 * A simple data service to provide data and show dependency injection
 * Routing between the homepage and the "feature"
