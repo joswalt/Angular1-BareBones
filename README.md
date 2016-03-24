@@ -20,9 +20,9 @@ Here's what is in the project:
 
 It's a minimal app intended to get you up and running quickly so the rest is up to you!
 
-App based on John Papa's [Angular Style Guide](https://github.com/johnpapa/angular-styleguide)
+App based on John Papa's [Angular Style Guide](https://github.com/johnpapa/angular-styleguide).
 If you're using VS Code, you can install John Papa's [Angular code snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular1) 
-to simplify the process of writing Angular code. The code snippets make it easy
+to simplify the process of writing Angular 1.X code. The code snippets make it easy
 to build Angular modules, controllers, services, factories, directives and more.
 
 
