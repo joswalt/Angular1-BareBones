@@ -7,7 +7,7 @@ with an Angular 1 project easy!
 Here's what is in the project:
 
 * Angular scripts and configuration are ready to go
-* Angular 2 bootstrapper wired up to the app component
+* Angular bootstrapper wired up to the app module
 * App shell with basic routing applied
 * Modular based application design to help with team development per feature
 * Dashboard module for intial layout 
