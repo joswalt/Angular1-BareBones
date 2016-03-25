@@ -15,7 +15,7 @@
             {
                 state: 'feature',
                 config: {
-                    url: '/',
+                    url: '/feature/',
                     templateUrl: 'app/feature/feature.html',
                     controller: 'FeatureController',
                     controllerAs: 'vm',
