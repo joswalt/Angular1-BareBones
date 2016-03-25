@@ -1,7 +1,7 @@
 {
   "name": "angular1-barebones",
   "author": "John Oswalt",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "start": "live-server --open=src"
   },
