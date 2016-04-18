@@ -1,9 +1,7 @@
-<div>
-    <h2>Products</h2>
-    <ul>
-        <li ng-repeat="p in vm.products">{{p.productName}} - {{p.productPrice | currency}}</li>
-    </ul>
-    <p>
-        <a ui-sref="dashboard">Navigate Home</a>
-    </p>
-</div>
+<h2>Products</h2>
+<ul>
+    <li ng-repeat="p in $ctrl.products">{{p.productName}} - {{p.productPrice | currency}}</li>
+</ul>
+<p>
+    <a ui-sref="dashboard">Navigate Home</a>
+</p>

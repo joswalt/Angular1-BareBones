@@ -3,7 +3,7 @@
 
     angular
         .module('app.services')
-        .factory('DataService', DataService);
+        .factory('dataService', DataService);
 
     DataService.$inject = ['$q'];
     function DataService($q) {

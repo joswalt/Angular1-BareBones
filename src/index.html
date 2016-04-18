@@ -19,17 +19,7 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <div ng-include="'app/layout/shell.html'" class="container"></div>
-        
-        <footer>
-            <div class="navbar navbar-fixed-bottom">
-                <div class="navbar-inner footer">
-                    <div class="container">
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <app-layout></app-layout>
         
         <script src="/node_modules/angular/angular.js"></script>
         <script src="/node_modules/angular-animate/angular-animate.js"></script>
@@ -47,11 +37,12 @@
         <script src="app/blocks/router/router-helper.provider.js"></script>
         <script src="app/core/config.js"></script>
         <script src="app/core/core.route.js"></script>
-        <script src="app/dashboard/dashboard.controller.js"></script>
+        <script src="app/dashboard/dashboard.component.js"></script>
         <script src="app/dashboard/dashboard.route.js"></script>
-        <script src="app/feature/feature.controller.js"></script>
+        <script src="app/feature/feature.component.js"></script>
         <script src="app/feature/feature.route.js"></script>
-        <script src="app/layout/shell.controller.js"></script>
+        <script src="app/layout/appLayout.component.js"></script>
+        <script src="app/layout/appHeader.component.js"></script>
         <script src="app/services/data.service.js"></script>
     </body>
 </html>
