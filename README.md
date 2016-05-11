@@ -6,6 +6,7 @@ with an Angular 1.X project easy!
 
 Here's what is in the project:
 
+* Project utilizes Angular Components
 * Angular scripts and configuration are ready to go
 * Angular bootstrapper wired up to the app module
 * App shell with basic routing applied
