@@ -1,14 +1,23 @@
-(function() {
+(function () {
     'use strict';
 
     angular
         .module('app.core')
+        .config(configureStates)
         .run(appRun);
 
-    /* @ngInject */
-    function appRun(routerHelper) {
+    appRun.$inject = ['RouterHelper'];
+    function appRun(routerHelper) { }
+
+    configureStates.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvider'];
+    function configureStates($stateProvider, $locationProvider, $urlRouterProvider) {
         var otherwise = '/404';
-        routerHelper.configureStates(getStates(), otherwise);
+        var states = getStates();
+        states.forEach(function (state) {
+            $stateProvider.state(state.state, state.config);
+        });
+        $locationProvider.html5Mode(true);
+        $urlRouterProvider.otherwise(otherwise);
     }
 
     function getStates() {
