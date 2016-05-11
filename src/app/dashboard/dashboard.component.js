@@ -1,20 +1,25 @@
-(function() {
-    'use strict';
-
-    angular
-        .module('app.dashboard')
-        .component('appDashboard', {
+var app;
+(function (app) {
+    var dashboard;
+    (function (dashboard) {
+        'use strict';
+        var DashboardController = (function () {
+            function DashboardController(_logger, _config) {
+                this._logger = _logger;
+                this._config = _config;
+                this.$onInit = function () {
+                    this.title = this._config.appTitle;
+                    this._logger.info('Dashboard Component loaded.');
+                };
+            }
+            DashboardController.$inject = ['logger', 'config'];
+            return DashboardController;
+        }());
+        angular.module('app.dashboard')
+            .component('appDashboard', {
             templateUrl: './app/dashboard/dashboard.html',
             controller: DashboardController
         });
-
-    DashboardController.$inject = ['logger', 'config'];;
-    function DashboardController (logger, config) {
-        var vm = this;
-        
-        vm.$onInit = function() {
-            vm.title = config.appTitle;
-            logger.info("Dashboard Component loaded.");
-        }
-    }
-})();
+    })(dashboard = app.dashboard || (app.dashboard = {}));
+})(app || (app = {}));
+//# sourceMappingURL=dashboard.component.js.map

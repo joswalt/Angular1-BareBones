@@ -1,6 +1,6 @@
-var app;
-(function (app) {
+namespace app {
     'use strict';
+
     angular.module('app', [
         'app.core',
         'app.layout',
@@ -8,5 +8,4 @@ var app;
         'app.feature',
         'app.services'
     ]);
-})(app || (app = {}));
-//# sourceMappingURL=app.module.js.map
+}

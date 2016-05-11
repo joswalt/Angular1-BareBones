@@ -1,20 +1,25 @@
-(function() {
-    'use strict';
-
-    angular
-        .module('app.layout')
-        .component('appHeader', {
-            templateUrl: './app/layout/header.html',
-            controller: AppHeaderController
+var app;
+(function (app) {
+    var layout;
+    (function (layout) {
+        'use strict';
+        var AppLayoutController = (function () {
+            function AppLayoutController(_logger, _config) {
+                this._logger = _logger;
+                this._config = _config;
+                this.$onInit = function () {
+                    this.title = this._config.appTitle;
+                    this._logger.info('App Header Component loaded.');
+                };
+            }
+            AppLayoutController.$inject = ['logger', 'config'];
+            return AppLayoutController;
+        }());
+        angular.module('app.layout')
+            .component('appHeader', {
+            templateUrl: './app/layout/appHeader.component.html',
+            controller: AppLayoutController
         });
-
-    AppHeaderController.$inject = ['logger', 'config'];;
-    function AppHeaderController (logger, config) {
-        var vm = this;
-        
-        vm.$onInit = function() {
-            vm.title = config.appTitle;
-            logger.info("App Header Component loaded.");
-        }
-    }
-})();
+    })(layout = app.layout || (app.layout = {}));
+})(app || (app = {}));
+//# sourceMappingURL=appHeader.component.js.map
