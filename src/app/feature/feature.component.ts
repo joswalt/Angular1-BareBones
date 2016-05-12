@@ -2,11 +2,11 @@ namespace app.feature {
     'use strict';
 
     interface IFeatureVm {
-        products: any[]
+        products: app.feature.IProduct[]
     }
 
     class FeatureController implements IFeatureVm {
-        products: any[];
+        products: app.feature.IProduct[];
 
         static $inject: Array<string> = ['logger', 'dataService'];
         constructor(private _logger: blocks.logger.ILogger,
@@ -14,10 +14,14 @@ namespace app.feature {
         }
         
         $onInit = function () {
-            return this._dataService.getData().then((results: any[]) => {
-                this.products = results;
+            this.getProducts().then((results: app.feature.IProduct[]) => {
                 this._logger.info("Feature Component loaded.");
-
+            });
+        }
+        
+        getProducts() {
+            return this._dataService.getData().then((results: app.feature.IProduct[]) => {
+                this.products = results;
                 return this.products;
             });
         }

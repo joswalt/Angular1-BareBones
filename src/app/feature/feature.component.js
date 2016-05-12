@@ -9,13 +9,18 @@ var app;
                 this._dataService = _dataService;
                 this.$onInit = function () {
                     var _this = this;
-                    return this._dataService.getData().then(function (results) {
-                        _this.products = results;
+                    this.getProducts().then(function (results) {
                         _this._logger.info("Feature Component loaded.");
-                        return _this.products;
                     });
                 };
             }
+            FeatureController.prototype.getProducts = function () {
+                var _this = this;
+                return this._dataService.getData().then(function (results) {
+                    _this.products = results;
+                    return _this.products;
+                });
+            };
             FeatureController.$inject = ['logger', 'dataService'];
             return FeatureController;
         }());

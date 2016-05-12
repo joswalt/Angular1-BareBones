@@ -2,7 +2,7 @@ namespace app.services {
     'use strict';
 
     export interface IDataService {
-        getData: () => ng.IPromise<any>;
+        getData: () => ng.IPromise<app.feature.IProduct[]>;
     }
 
     export class DataService implements IDataService {
@@ -11,9 +11,9 @@ namespace app.services {
         constructor(private $q: ng.IQService) {
         }
 
-        getData: () => ng.IPromise<any> = () => this.$q.when(this.mockData);
+        getData: () => ng.IPromise<app.feature.IProduct[]> = () => this.$q.when(this.mockData);
 
-        mockData: any[] = [
+        mockData: app.feature.IProduct[] = [
             {
                 productNumber: 3353,
                 productPrice: 64.26,
